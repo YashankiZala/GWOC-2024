@@ -211,10 +211,20 @@
 </div>
 
 <script>
-    function toggleAnswer(id) {
-var answer = document.getElementById("answer" + id);
-answer.style.display = (answer.style.display === "block") ? "none" : "block";
+    let openAnswerId = null;
+
+function toggleAnswer(id) {
+    const answer = document.getElementById("answer" + id);
+
+    if (openAnswerId !== null && openAnswerId !== id) {
+        const previousAnswer = document.getElementById("answer" + openAnswerId);
+        previousAnswer.style.display = "none";
+    }
+
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
+    openAnswerId = (answer.style.display === "block") ? id : null;
 }
+
 
 </script>
 
