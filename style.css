@@ -210,7 +210,7 @@ body{
 
 .combine-footer-column-inside{
     display:flex;
-    width:75%;
+    width:100%;
     justify-content: space-evenly;
 }
 
