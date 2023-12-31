@@ -216,15 +216,19 @@
 function toggleAnswer(id) {
     const answer = document.getElementById("answer" + id);
 
-    if (openAnswerId !== null && openAnswerId !== id) {
+    if (openAnswerId !== null) {
         const previousAnswer = document.getElementById("answer" + openAnswerId);
         previousAnswer.style.display = "none";
+
+        if (openAnswerId === id) {
+            openAnswerId = null;
+            return;
+        }
     }
 
-    answer.style.display = (answer.style.display === "block") ? "none" : "block";
-    openAnswerId = (answer.style.display === "block") ? id : null;
+    answer.style.display = "block";
+    openAnswerId = id;
 }
-
 
 </script>
 
