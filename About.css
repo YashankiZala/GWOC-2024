@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0%;
+    margin-right: 0% ;
+    margin-top: 0;
+    background-color: #efefef;
+}
+
+.about-us-container {
+    width:100%;
+    height:450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #ebe4e4;  */
+    color: #ffffff; 
+    margin-top: 0;
+}
+
+.about-us-content {
+    height:450px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0%;
+    margin-left: 15px;
+    background: rgba(4, 0, 0, 0.75);
+}
+
+.about-us-content h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 7rem;
+    font-weight:700;
+}
+.about-us-content p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+img {
+    max-width: 100%;
+    height: 10cm;
+    border-radius: 2.5cm;
+}
+
+/**New Container of Owner information**/
+.main-container{
+    display: flex;
+}
+
+.left-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height:500px;
+    width:500px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image{
+    background-image: url('About-main.jpg');
+    height:475px;
+    width:475px;
+    background-size: cover;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:490px;
+    width:500px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-top: 380px;
+    transition: 0.6s;
+    transition: all 0.2s;
+}
+
+.name{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.444444;
+    color: #292929;
+    text-transform: uppercase;
+}
+
+.occupation{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #747474;
+}
+.socials-link{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.socials-link i{
+    font-size: 23px;
+    color: #ffffff;
+    transition: all 0.2s;
+    margin-right: 6px;
+    margin-left: 6px;
+    /* opacity: 0; */
+}
+.left-container:hover .details{
+    transform: scale(1.2);
+}
+
+.socials-link:hover {
+    opacity:1;
+}
+
+/**Right Container**/
+
+.right-container{
+    display:flex;
+    flex-direction: column;
+    margin-left:25px;
+}
+
+.right-container h3{
+    font-size: 40px;
+    color:black;
+    font-weight: 500;
+    line-height:43px;
+    margin-bottom:20px;
+}
+
+.little-more-intro:before{
+    display: inline-block;
+    content:"";
+    width:45px;
+    height:2px;
+    background-color: #6e3012;
+    top:-3px;
+    margin-right: 18px;
+}
+
+.little-more-intro{
+    font-size: 12px;
+    color:#969696;
+    font-weight:500;
+    letter-spacing:3.2px;
+}
+
+.para-intro{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #969696;
+    font-weight: 400;
+}
+
+/**Information Set 2**/
+
+.I2{
+    margin-left: 190px;
+}
+
+.info-set-2{
+    margin-top:100px;
+}
+
+.image-info-set-2{
+    margin-left:55px;
+    height:480px;
+    width:480px;
+}
+
+.image-2{
+    height:455px;
+    width:455px;
+}
+.image-info-set-1{
+    margin-left:190px;
+    margin-top:40px;
+}
+
+/**Info CSS**/
+.info-container {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-container h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6em;
+    color: #333; 
+}
+
+.info-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.6em;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.info-button:hover {
+    background-color:darkgreen;
+}
