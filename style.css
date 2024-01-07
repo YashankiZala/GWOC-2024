@@ -1,130 +1,134 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #efefef;
+body {
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 /**Main bg of Course**/
-.course-bg-main{
+.course-bg-main {
     display: flex;
-    background-image: url('course_bg_main.png');
+    /* background-image: url('course_bg_main.png'); */
+    background-color: #d2b48c;
     background-size: cover;
-    height:250px;
-    width:100%;
-    font-size: 7rem;
-    font-family:'Playfair Display',serif;
+    height: 150px;
+    width: 100%;
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif;
     align-items: center;
     justify-content: center;
 }
 
 /**Course title**/
-.title{
+.title {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e9cd79;
-    width:100%;
-    height:40px;
-    margin-top:25px;
+    background-color: #7ca9af;
+    width: 100%;
+    height: 40px;
+    margin-top: 25px;
 }
 
-.title p{
-    font-size:20px;
-    font-weight:700;
+.title p {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 /**Course Details**/
-.course-details{
+.course-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 /**Course image container**/
-.course-image-container{
-    display:flex;
+.course-image-container {
+    display: flex;
     align-items: center;
     justify-content: center;
-    height:450px;
-    width:450px;
+    height: 450px;
+    width: 450px;
     border: 2px solid #a6a6a6;
     background-color: #f7f8f9;
-    margin-top:25px;
+    margin-top: 25px;
 }
 
 /**Course Image**/
-.course-image{
-    height:420px;
-    width:420px;
+.course-image {
+    height: 420px;
+    width: 420px;
     background-size: cover;
 }
 
 /**Couse Details text**/
-.course-details-text{
+.course-details-text {
     margin-top: 40px;
     margin-left: 20px;
 }
-  /**Main text**/
-.text-main-title{
+
+/**Main text**/
+.text-main-title {
     font-size: 18px;
     line-height: 1.4;
     color: #212121;
 }
 
-.text-main-price{
+.text-main-price {
     font-size: 28px;
     font-weight: 500;
-    color:#212121;
+    color: #212121;
 }
+
 /**Course small text**/
 
-.course-small-title-text{
+.course-small-title-text {
     font-size: 16px;
     font-weight: 550;
     color: #212121;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
-.icon-text{
-    display:flex;
+.icon-text {
+    display: flex;
     line-height: 2;
-    font-size:14px;
+    font-size: 14px;
     color: #212121;
 }
 
-.icon-text p{
+.icon-text p {
     margin-left: 7px;
 }
 
-.icon-text i{
+.icon-text i {
     line-height: 2;
 }
+
 /**Connecting line**/
-.connect-line{
-    font-size:20px;
+.connect-line {
+    font-size: 20px;
     color: #212121;
     font-weight: 550;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
 /**Buy Now**/
-.buy-now{
+.buy-now {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:450px;
-    height:60px;
-    background-color: #83aebf;
-    margin-top:105.5px;
+    width: 450px;
+    height: 60px;
+    background-color: #3e777f;
+    margin-top: 105.5px;
 }
 
-.buy-now a{
-    color:white;
+.buy-now a {
+    color: white;
     font-weight: 550;
     font-size: 25px;
     text-decoration: none;
@@ -133,7 +137,7 @@ body{
 /**Glimpses of course**/
 
 /**Glimpses of course title**/
-.glimpses-course-title{
+.glimpses-course-title {
     display: flex;
     align-items: center;
     margin-top: 50px;
@@ -141,235 +145,242 @@ body{
     flex-direction: column;
 }
 
-.dash{
-    color:#5c3f3f;
+.dash {
+    color: #5c3f3f;
     font-size: 70px;
-    margin-top:-35px;
+    margin-top: -35px;
 }
 
 /**Glimpses Gallery**/
-.glimpses-gallery{
+.glimpses-gallery {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.glimpses-image-container{
+.glimpses-image-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
-    width:400px;
+    height: 360px;
+    width: 360px;
     background-color: #dbe0e3;
     margin-top: 15px;
+    margin-bottom: 25px;
     overflow: hidden;
-    cursor:pointer;
-    box-shadow:outset 0 4px 6px -1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    box-shadow: outset 0 4px 6px -1px rgba(0, 0, 0, 0.5);
 }
 
-.glimpses-image{
+.glimpses-image {
     cursor: pointer;
-    height:370px;
-    width:370px;
+    height: 340px;
+    width: 340px;
     background-size: cover;
     transition: all 1.1s;
 }
-.glimpses-image-container:hover .glimpses-image{
+
+.glimpses-image-container:hover .glimpses-image {
     transform: scale(1.2);
 }
+
 /**insta logo inside image**/
 
-.insta-content{
+.insta-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     transition: 0.6s;
     font-size: 30px;
     height: 370px;
-    width:370px;
+    width: 370px;
     text-decoration: none;
-    opacity:0;
+    opacity: 0;
 }
 
-.insta-content i{
+.insta-content i {
     color: #ffffff;
 }
-.glimpses-image:hover .insta-content{
+
+.glimpses-image:hover .insta-content {
     opacity: 1;
 }
 
 /**Footer**/
-.combine-footer-column{
-    height:190px;
+.combine-footer-column {
+    height: 190px;
     background-color: #e2e6e8;
-    margin-top:15px;
+    margin-top: 15px;
 }
 
-.combine-footer-column-inside{
-    display:flex;
-    width:100%;
-    height:190px;
+.combine-footer-column-inside {
+    display: flex;
+    width: 100%;
+    height: 190px;
     justify-content: space-evenly;
 }
 
 /**column 1**/
-.column1{
+.column1 {
     display: flex;
     flex-direction: column;
-    color:#000000;
-    width:200px;
-    font-size:0.85rem;
+    color: #000000;
+    width: 200px;
+    font-size: 0.85rem;
 }
 
-.logo{
-    height:100px;
-    width:180px;
+.logo {
+    height: 100px;
+    width: 180px;
     background-size: cover;
 }
 
-.social-media-icons{
+.social-media-icons {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    width:130px;
+    width: 130px;
     justify-content: space-between;
 }
 
 /**Column 2,3,4**/
 
-.heading{
+.heading {
     color: #000000;
     font-size: 1rem;
     font-weight: 700;
-    margin:6px 0px 14px;
+    margin: 6px 0px 14px;
 }
 
-.column{
+.column {
     margin-top: 38px;
 }
-.column li{
+
+.column li {
     list-style: none;
 }
 
-.column a{
+.column a {
     text-decoration: none;
-    color:#000000;
+    color: #000000;
     font-size: 0.85rem;
 }
 
-.column a:hover{
-    text-decoration: underline;
+.column a:hover {
+    color:  #255c63;
 }
 
 /**Private Sessions**/
 
-  /**Auto type section**/
-  .auto-type-container{
+/**Auto type section**/
+.auto-type-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height:40px;
-    width:100%;
-    margin-top:15px;
-  }
-  .auto-type-container p{
-    font-size:2rem;
-    font-family:'Playfair Display',serif;
-    color: #5c3f3f;
-  }
+    height: 40px;
+    width: 100%;
+    margin-top: 15px;
+}
 
-  .auto-type{
-    color:#0077a7;
+.auto-type-container p {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #5c3f3f;
+}
+
+.auto-type {
+    color: #3e777f;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: 550;
-  }
+}
 
-   /**Private Sessions Photo section**/
-  .private-session-photos{
+/**Private Sessions Photo section**/
+.private-session-photos {
     display: flex;
     justify-content: space-evenly;
-    margin-top:5px;
+    margin-top: 5px;
     flex-wrap: wrap;
-  }
+}
 
-  .photos{
-    height:340px;
-    width: 16.7%;
+.photos {
+    height: 390px;
+    width: 21%;
     background-color: #ffffff;
-    margin-top: 20px;
-  }
+    margin-top: 50px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
 
-  .session-image{
-    height:250px;
-    width:100%;
+.session-image {
+    height: 320px;
+    width: 100%;
     background-size: cover;
-  }
+}
 
-  .photos p{
-    font-size: 0.85rem;
-    color: rgb(5, 73, 5);
+.photos p {
+    font-size: 0.90rem;
+    color: #3e777f;
     margin-top: 20px;
     margin-left: 20px;
     line-height: 1.4;
-  }
+}
 
-    /**Private Sessions Details Section**/
-  .session-details-heading{
+/**Private Sessions Details Section**/
+.session-details-heading {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    font-family: 'Playfair Display',serif;
+    font-family: 'Playfair Display', serif;
     font-size: 3rem;
-  }
+}
 
-  /**Session inner details=Details+Book Now**/
-  .session-inner-details-book-now{
-    display:flex;
-    justify-content:center;
-    margin-top:20px;
-  }
+/**Session inner details=Details+Book Now**/
+.session-inner-details-book-now {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
-  .detail{
-    display:flex;
+.detail {
+    display: flex;
     align-items: center;
     justify-content: center;
-    height:44px;
-    width:170px;
-    border-radius:5px;
-    border:2px solid #0077a7;
-  }
+    height: 44px;
+    width: 170px;
+    margin-right: 15px;
+    border: 2px solid #3e777f;
+}
 
-  .book-now{
-    display:flex;
+.book-now {
+    display: flex;
     align-items: center;
     justify-content: center;
-    height:44px;
-    width:170px;
-    margin-left:5px;
-    border-radius:5px;
-    border:2px solid #0077a7;
-  }
+    height: 44px;
+    width: 270px;
+    margin-left: 15px;
+    border: 2px solid #3e777f;
+}
 
-  .detail a{
-    text-decoration:none;
-    color:#0077a7;
+.detail a {
+    text-decoration: none;
+    color: #3e777f;
     font-weight: 550;
-  }
+}
 
-  .book-now a{
-    text-decoration:none;
-    color:#0077a7;
+.book-now a {
+    text-decoration: none;
+    color: #3e777f;
     font-weight: 550;
-  }
+}
 
-  /**FAQs CSS**/
-  .faq-container {
+/**FAQs CSS**/
+.faq-container {
     max-width: 100%;
     background-color: #efefef;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
 h1 {
@@ -383,23 +394,25 @@ h1 {
     padding: 10px;
     transition: background-color 0.3s;
 }
-.faq-item p{
+
+.faq-item p {
     font-size: 1rem;
     color: #000000;
 }
+
 .faq-item:hover {
     background-color: #efefef;
 }
 
 .question {
     color: #007bff;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .answer {
     color: #333;
     display: none;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 
@@ -417,6 +430,7 @@ h1 {
 
 /* Media Query for Footer and Private Session Photos */
 @media only screen and (max-width: 600px) {
+
     /**Footer**/
     .combine-footer-column {
         height: auto;
@@ -442,8 +456,10 @@ h1 {
     .logo {
         margin-bottom: 10px;
     }
-    .column1{
-        margin-left: 45px;;
+
+    .column1 {
+        margin-left: 45px;
+        ;
     }
 
     /**Private Sessions Photos**/
@@ -456,4 +472,103 @@ h1 {
     }
 }
 
+/* cards and video section */
+.sec2 .row {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 25px 25px;
+    position: absolute;
+    z-index: 2;
+    top: 470px;
+    left: 0px;
+}
 
+.col-md-4 .card {
+    width: 100%;
+}
+
+.head {
+    text-align: center;
+    margin: 25px 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+.image1 {
+    width: 500px;
+    height: 400px;
+    margin: 25px 25px;
+}
+
+.navbar-brand img {
+    height: 50px;
+    margin: 0px 0px;
+    padding: 0px;
+}
+
+/* Contact Us page */
+.wrapper {
+    padding: 10px;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.contact {
+    text-align: center;
+    font-size: 5rem;
+    height: 50px;
+    max-width: 100%;
+    background-color: #d2b48c;
+}
+.icons{
+    height: 40px;
+    width: 40px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 4px;
+}
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.col {
+    flex: 1;
+    /* margin: 10px; */
+    padding: 10px;
+    margin-right: 20px;
+    border: 3px solid #d2b48c;
+}
+
+.col:hover {
+    border: 3px solid #013c43;
+}
+
+@media screen and (max-width:980px) {
+    .columns .col {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+    }
+
+    .columns .col:last-child {
+        flex-basis: 100%;
+        margin: 0;
+    }
+
+    .columns .col:nth-last-child(2) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .columns .col {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+}
