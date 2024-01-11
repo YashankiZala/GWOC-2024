@@ -92,12 +92,12 @@ body {
     font-weight: 550;
     color: #212121;
     margin-top: 15px;
-    line-height:1.5;
+    line-height:1;
 }
 
 .icon-text {
     display: flex;
-    line-height: 1.5;
+    line-height: 1;
     font-size: 14px;
     color: #212121;
 }
@@ -107,7 +107,7 @@ body {
 }
 
 .icon-text i {
-    line-height: 2;
+    line-height: 1;
 }
 
 /**Connecting line**/
@@ -126,7 +126,7 @@ body {
     width: 450px;
     height: 60px;
     background-color: #3e777f;
-    margin-top: 25.5px;
+    margin-top: 20px;
     border:1px solid black;
 }
 .buy-now:hover{
@@ -170,8 +170,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 360px;
-    width: 360px;
+    height: 380px;
+    width: 380px;
     background-color: #dbe0e3;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -182,8 +182,8 @@ body {
 
 .glimpses-image {
     cursor: pointer;
-    height: 340px;
-    width: 340px;
+    height: 360px;
+    width: 360px;
     background-size: cover;
     transition: all 1.1s;
 }
@@ -201,8 +201,8 @@ body {
     background: rgba(0, 0, 0, 0.6);
     transition: 0.6s;
     font-size: 30px;
-    height: 370px;
-    width: 370px;
+    height: 360px;
+    width: 360px;
     text-decoration: none;
     opacity: 0;
 }
