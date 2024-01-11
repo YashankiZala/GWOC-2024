@@ -92,11 +92,12 @@ body {
     font-weight: 550;
     color: #212121;
     margin-top: 15px;
+    line-height:1.5;
 }
 
 .icon-text {
     display: flex;
-    line-height: 2;
+    line-height: 1.5;
     font-size: 14px;
     color: #212121;
 }
